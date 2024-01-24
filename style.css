@@ -1,0 +1,222 @@
+:root{
+    --background-color: #000000;
+    --page-color: #FFFFFF;
+    --left-page-color: #4F39F4;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 17%;
+    left: 15%;
+
+}
+.left-page{
+    width: 420px;
+    height: 500px;
+    background: linear-gradient(180deg, #4F39F4, #4233F0);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+.left-page p{
+    color: #D2C0FF;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+}
+.left-page h1{
+    color: #EFEFEF;
+    font-size: 70px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.left-page span{
+    color: #D2C0FF;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    bottom: 77px;   
+    text-align: center;
+}
+.left-page h1, .left-page span{
+        margin-top: 30px; 
+}
+.left-page header{
+    background: linear-gradient(45deg, #442DE0, #472CDD, #4734EE, #4A2ACF);
+    border-radius: 50%;
+    width: 180px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    padding: 5px;
+    border: 1px solid #442DE0;
+}
+.left-page h3{
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--page-color);
+    font-weight: bold;
+}
+.description{
+    margin: 40px auto;
+    margin-top: -12px;
+    font-size: 18px;
+    text-align: center;
+    width: 58%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    color: #D2C0FF;
+}
+.right-page{
+    width: 420px;
+    height: 500px;
+    background: var(--page-color);
+    border: 1px solid #EFEFEF;
+    box-shadow: 0.5px 2px 3px 3px #EFEFEF;
+    position: absolute;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    left: 95%;
+    z-index: -1;
+}
+.feeling{
+    display: flex;
+    margin: 24px;
+    width: 80%;
+    position: relative;
+    left: 20px;
+    border-radius: 12px;
+}
+.feeling p{
+    position: relative;
+    left: 57%;
+    color: #858B9B;
+    font-weight: bold;
+}
+.feeling p span{
+    color: #D2C0FF; 
+}
+.right-page h3{
+    font-size: 25px;
+    margin: 20px;
+    position: relative;
+    left: 20px;
+}
+.feeling h4{
+    position: relative;
+    left: 15px;
+}
+.feeling:nth-child(2){
+    background-color: #FFF6F5;
+    color: #CF7376;
+    cursor: pointer;
+}
+.feeling:nth-child(3){
+    background: #FFFBF2;
+    color: #FADA91;
+    cursor: pointer;
+}
+.feeling:nth-child(4){
+    background-color: #F2FBFA;
+    color: #77C6B3;
+    cursor: pointer;
+}
+.feeling:nth-child(5){
+    background-color: #F3F3FD;
+    color: #676BB5;
+    cursor: pointer;
+}
+.button{
+    margin-left: 17%;
+    width: 70%;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 2px;
+    background-color: #303B59;
+    color: #FFFFFF;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s ease-in;
+}
+.button:hover{
+    background-color: #533AF6;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media(max-width: 600px){
+    html, body{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .background{
+        position: absolute;
+        display: flex;
+        left: 15%;
+        top: 2%;
+        margin: auto;
+    }
+    .right-page{
+        position: absolute;
+        left: 0%;
+        top: 96%
+    }
+    .right-page h3{
+        font-size: 22px;
+        margin: 35px;
+        margin-bottom: 15px;
+    }
+}
+@media(max-width: 487px){
+    .background{
+        position: absolute;
+        display: flex;
+        left: 4%;
+        top: 2%;
+        margin: auto;
+    }
+}
+@media(max-width: 992px){
+    .background{
+        position: absolute;
+        left: 3%;
+    }
+    .button{
+        margin-left: 17%;
+        width: 70%;
+        padding: 15px;
+        cursor: pointer;
+        margin-top: 2px;
+        background-color: #303B59;
+        color: #FFFFFF;
+        border-radius: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        transition: 0.5s ease-in;
+    }
+    .button:hover{
+        background-color: #533AF6;
+        color: #fff;
+        cursor: pointer;
+    }
+}
